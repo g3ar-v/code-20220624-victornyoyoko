@@ -1,38 +1,58 @@
 .App {
-  text-align: center;
+	position: relative;
+	width: auto;
+	height: auto;
+	background: #262626;
+	margin: 0 auto;
+	padding: 0 5%;
+	/*clear: both;*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Logo {
+	font-family: 'Dancing Script';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 54px;
+
+	color: #FFFFFF;
+	order: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.call-button {
+	order: 2;
+	box-sizing: border-box;
+	width: 131px;
+	height: 50px;
+	left: 990px;
+	top: 25px;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: transparent;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-item  {
+	display: flex;
+	list-style: none;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 110%;
+	color: #FFFFFF;
+	order: 1;
+	text-decoration: none;
+	justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
