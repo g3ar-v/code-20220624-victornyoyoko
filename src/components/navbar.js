@@ -6,14 +6,14 @@ import '../App.css';
 const Navbar = () => {
 	return (
 		<div className="nav">
-			<Logo/>
+			<Logo name="header"/>
 			<div className="nav-right">
 				<ul className="nav-item">
-					<li><Link to="#">Explore</Link></li>
-					<li><Link to="#">About Us</Link></li>
-					<li><Link to="#">Cities</Link></li>
+					<li><Link style={{textDecoration: 'none', color: "#FFFFFF"}} to="/explore">Explore</Link></li>
+					<li><Link style={{textDecoration: 'none', color: "#FFFFFF"}} to="/about">About Us</Link></li>
+					<li><Link style={{textDecoration: 'none', color: "#FFFFFF"}} to="#">Cities</Link></li>
 				</ul>
-				<button className="call-button">Call</button>
+				<button className="call-button-light">Call</button>
 			</div>
 		</div>
 

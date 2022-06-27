@@ -1,14 +1,15 @@
-.App {
-	position: relative;
+/* Main Screen */ 
+.main {
 	width: auto;
-	height: auto;
-	background: #262626;
+	height: 100%;
 	margin: 0 auto;
 	padding: 0 5%;
-	/*clear: both;*/
+	background-color: rgba(21, 20, 20, 0.25);
+	background-image: url("./assets/mainscreen.png");
+	background-size: cover;
 }
 
-.Logo {
+.Logo-header {
 	font-family: 'Dancing Script';
 	font-style: normal;
 	font-weight: 700;
@@ -19,7 +20,7 @@
 	order: 0;
 }
 
-.call-button {
+.call-button-light {
 	order: 2;
 	box-sizing: border-box;
 	width: 131px;
@@ -68,13 +69,12 @@
 	font-family: 'Exo 2';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 100px;
+	font-size: 70px;
 	line-height: 110px;
-	display: flex;
+	color: #FFFFFF;
+	text-justify: inter-word;
 	align-items: center;
 	text-align: center;
-	color: #FFFFFF;
-	padding-bottom: 100px;
 }
 
 .sub-title {
@@ -82,12 +82,14 @@
 	font-style: normal;
 	font-weight: 700;
 	font-size: 30px;
-	line-height: 110%;
+	/*line-height: 110%;*/
 	display: flex;
-	align-items: center;
 	text-align: center;
+	width: 50%;
+	margin: auto;
+	margin-top: -80px;
 	color: #FFFFFF;
-	}
+}
 
 .searchbar {
 	box-sizing: border-box;
@@ -97,12 +99,15 @@
 	top: 527px;
 	display: flex;
 	align-items: center;
-
+	margin: auto;
+	justify-content: space-evenly;
 	background: linear-gradient(94.43deg, rgba(249, 249, 249, 0.49) 34.95%, rgba(249, 249, 249, 0.175) 67.01%);
 	backdrop-filter: blur(10px);
-	/* Note: backdrop-filter has minimal browser support */
-
 	border-radius: 30px;
+	border: 1px solid;
+
+border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+
 }
 
 .textbox {
@@ -110,12 +115,26 @@
 	height: 70px;
 	left: 564px;
 	top: 542px;
-
 	background: #FFFFFF;
 	border-radius: 16px;
+	align-items: center;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 110%;
+	color: #6D6D6D;
+}
+::-webkit-input-placeholder {
+	font-size: 12px; color: #000000;
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 110%;
 }
 
-.searchbox {
+.search-button {
 	width: 235px;
 	height: 70px;
 	left: 791px;
@@ -123,14 +142,200 @@
 
 	background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
 	border-radius: 16px;
-	font-family: 'Ubuntu';
-	font-style: normal;
+	font-family: 'Ubuntu'; font-style: normal;
 	font-weight: 500;
 	font-size: 26px;
 	line-height: 110%;
-	/* or 29px */
-
-	align-items: center;
-	text-align: center;
+	border-style: none;
 	color: #FFFFFF;
 }
+
+/*.wave-container {*/
+/*position: relative;*/
+/*width: auto;*/
+/*height: 100%;*/
+/*}*/
+
+
+/* Second screen */
+
+.Explore {
+	width: auto;
+	height: 100%;
+	/*background: #000000;*/
+	/*color: #E5E5E5",*/
+}
+
+.secondscreen-images {
+	/*float: left;*/
+	/*width: 70%;*/
+	margin: auto;
+	/*padding: 5px;*/
+	display: flex;
+	/*gap: 20px;*/
+	justify-content: space-evenly;
+font-family: 'ubuntu'; font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 110%;
+}
+
+.kingsize-info {
+	position: relative;
+	top: -50px;
+	left: 26px;
+	width: 424px;
+	height: 100px;
+	box-sizing: border-box;	
+	background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	display: flex;
+	padding-left: 20px;
+		border: 2px solid;
+	border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(179, 179, 179, 0.3) 100%);
+
+}
+
+.image-data {
+	width: 80px;
+	height: 30px;
+	background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
+	border-radius: 10px;
+	font-family: 'Ubuntu';
+	vertical-align: middle;
+	line-height: 30px;
+	text-align: center;
+}
+.penthouse-info {
+	position: relative;
+	padding-left: 20px;
+	top: -50px;
+	left: 26px;
+	width: 424px;
+	height: 100px;
+	box-sizing: border-box;	
+	background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	display: flex;
+border: 2px solid;
+	border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(179, 179, 179, 0.3) 100%);
+}
+
+.book-button {
+	width: 100px;
+	height: 50px;
+	background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
+	border-radius: 10px;
+	border-style: none;
+font-family: 'Ubuntu'; font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 110%;
+}
+/* Third Screen */
+.about-us {
+	width: auto;
+	height: 100%;
+}
+
+.about-images {
+	justify-content: space-evenly;
+	align-items: start;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: auto;
+	display: flex;
+}
+
+.caption-container {
+	position: relative;
+	top: -50px;
+	left: 26px;
+	width: 350px;
+	height: 100px;
+	box-sizing: border-box;	
+	border-radius: 15px;
+	display: flex;
+	flex-Direction: column;
+	padding-left: 20px;
+	border: 1px solid;
+
+	border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(179, 179, 179, 0.3) 100%);
+
+	background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+	backdrop-filter: blur(10px);
+}
+
+.bottomimages {
+	justify-content: space-evenly;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: auto;
+	display: flex;
+}
+	/* Fourth Screen */
+.fourth-screen {
+	width: auto;
+	height: 100%;
+	align-items: start;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.footer-right {
+	display: flex;
+	gap: 60px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-item {
+	display: flex;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 110%;
+	list-style: none;
+	gap: 60px;
+
+}
+
+.Logo-footer {
+	font-family: 'Dancing Script';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	/*line-height: 54px;*/
+	color: #000000;
+}
+
+.call-button-dark {
+	box-sizing: border-box;
+	width: 131px;
+	height: 50px;
+	left: 924px;
+	top: 584px;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	text-align: center;
+	color: #000000;
+	background-color: transparent;
+	gap: 60px;
+}
+

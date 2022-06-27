@@ -1,8 +1,8 @@
 import "../App.css";
 
-const Logo = () => {
+const Logo = (props) => {
   return (
-    <div className="Logo">
+		<div className={`Logo-${ props.name }`}>
       <h2>Your Logo</h2>
     </div>
   );
