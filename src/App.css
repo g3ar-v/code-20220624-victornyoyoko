@@ -1,5 +1,5 @@
-/* Main Screen */ 
-.main {
+/* Main Screen */
+#main {
 	width: auto;
 	height: 100%;
 	margin: 0 auto;
@@ -7,6 +7,7 @@
 	background-color: rgba(21, 20, 20, 0.25);
 	background-image: url("./assets/mainscreen.png");
 	background-size: cover;
+	clear:both;
 }
 
 .Logo-header {
@@ -40,6 +41,7 @@
 
 .nav {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -63,6 +65,22 @@
 	order: 1;
 	text-decoration: none;
 	gap: 60px;
+}
+
+.nav-item:hover  {
+	text-decoration: underline;
+}
+
+.hamburger {
+	order: 3;
+	background-color: transparent;
+	cursor: pointer;
+	border: transparent;
+	display: none;
+}
+
+.hamburger:hover {
+	color: #FFFFFF;
 }
 
 .title {
@@ -106,7 +124,7 @@
 	border-radius: 30px;
 	border: 1px solid;
 
-border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+	border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
 
 }
 
@@ -153,13 +171,69 @@ border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4
 /*.wave-container {*/
 /*position: relative;*/
 /*width: auto;*/
+/*top: 10px;*/
 /*height: 100%;*/
 /*}*/
+
+@media only screen and (max-width: 490px) {
+
+	#main {
+		height: 736px;
+		width: 414px;
+	}
+
+	.hamburger {
+		display: flex;
+
+	}
+
+	.title {
+		font-size: 25px;
+		line-height: 115%;
+	}
+
+	.sub-title {
+		position: relative;
+		top: 40px;
+		font-size: 20px;
+	}
+
+	.nav {
+		flex-wrap: wrap;
+	}
+	.nav-item {
+		display: none;
+	}
+
+	.call-button-light {
+		display: none;
+	}
+
+	.searchbar {
+		position: relative;
+		top: 30px;
+		left:  0px;
+		width: 380px;
+		height: 308px;
+		flex-Direction: column;
+		margin: auto;
+	}
+
+	.textbox {
+		width: 330px;
+		height: 60px;
+	}
+
+	.search-button {
+		width: 330px;
+		height: 60px;
+	}
+}
 
 
 /* Second screen */
 
-.Explore {
+#explore {
 	width: auto;
 	height: 100%;
 	/*background: #000000;*/
@@ -174,7 +248,7 @@ border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4
 	display: flex;
 	/*gap: 20px;*/
 	justify-content: space-evenly;
-font-family: 'ubuntu'; font-style: normal;
+	font-family: 'ubuntu'; font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 110%;
@@ -186,13 +260,13 @@ font-family: 'ubuntu'; font-style: normal;
 	left: 26px;
 	width: 424px;
 	height: 100px;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
 	backdrop-filter: blur(10px);
 	border-radius: 15px;
 	display: flex;
 	padding-left: 20px;
-		border: 2px solid;
+	border: 2px solid;
 	border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(179, 179, 179, 0.3) 100%);
 
 }
@@ -214,12 +288,12 @@ font-family: 'ubuntu'; font-style: normal;
 	left: 26px;
 	width: 424px;
 	height: 100px;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
 	backdrop-filter: blur(10px);
 	border-radius: 15px;
 	display: flex;
-border: 2px solid;
+	border: 2px solid;
 	border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(179, 179, 179, 0.3) 100%);
 }
 
@@ -229,13 +303,13 @@ border: 2px solid;
 	background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
 	border-radius: 10px;
 	border-style: none;
-font-family: 'Ubuntu'; font-style: normal;
+	font-family: 'Ubuntu'; font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 110%;
 }
 /* Third Screen */
-.about-us {
+#about {
 	width: auto;
 	height: 100%;
 }
@@ -255,7 +329,7 @@ font-family: 'Ubuntu'; font-style: normal;
 	left: 26px;
 	width: 350px;
 	height: 100px;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	border-radius: 15px;
 	display: flex;
 	flex-Direction: column;
@@ -275,7 +349,7 @@ font-family: 'Ubuntu'; font-style: normal;
 	margin: auto;
 	display: flex;
 }
-	/* Fourth Screen */
+/* Fourth Screen */
 .fourth-screen {
 	width: auto;
 	height: 100%;

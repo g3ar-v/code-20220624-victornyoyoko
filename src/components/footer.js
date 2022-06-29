@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavHashLink as Link } from 'react-router-hash-link';
 import Logo from './logo';
 import '../App.css';
 
@@ -22,9 +22,9 @@ const footer = () => {
 			</div>
 			<div className="footer-right">
 				<ul className="footer-item">
-					<li><Link style={{textDecoration: 'none', color: "#000000"}} to="#">Explore</Link></li>
-					<li><Link  style={{textDecoration: 'none', color: "#000000"}} to="#">About Us</Link></li>
-					<li><Link style={{textDecoration: 'none', color: "#000000"}} to="#">Cities</Link></li>
+					<li><Link style={{textDecoration: 'none', color: "#000000"}} to={"/#explore"}>Explore</Link></li>
+					<li><Link  style={{textDecoration: 'none', color: "#000000"}} to={"/#about"}>About Us</Link></li>
+					<li><a style={{textDecoration: 'none', color: "#000000"}} href="/#main">Cities</a></li>
 				</ul>
 				<button className="call-button-dark">Call</button>
 			</div>
